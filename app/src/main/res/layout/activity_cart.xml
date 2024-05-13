@@ -1,0 +1,1386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg" />
+
+    <ImageButton
+        android:id="@+id/back_cart_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back_btn" />
+
+    <TextView
+        android:id="@+id/ttt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Total Price:"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="0$"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ttt"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+    <ImageButton
+        android:id="@+id/to_order_btn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90999997" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:text="To Order"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/to_order_btn"
+        app:layout_constraintEnd_toEndOf="@+id/to_order_btn"
+        app:layout_constraintStart_toStartOf="@+id/to_order_btn"
+        app:layout_constraintTop_toTopOf="@+id/to_order_btn" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26999998">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/first_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+                <ImageButton
+                    android:id="@+id/perfume1_cart"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/parfume1" />
+
+                <TextView
+                    android:id="@+id/perfume1_name_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Versace"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume1_model_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="51dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Eros"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume1_type_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="81dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type: perfume"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume1__cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="111dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type of fragrance: "
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume1_type_fragrance_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="141dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Ice"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume1_price_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="171dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Price: 120$"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume1_ml_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="100ml"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <ImageButton
+                    android:id="@+id/perfume1_plus_cart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="318dp"
+                    android:layout_marginTop="208dp"
+                    android:contentDescription="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/plus_ic" />
+
+                <ImageButton
+                    android:id="@+id/perfume1_minus_cart"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="268dp"
+                    android:layout_marginTop="211dp"
+                    android:contentDescription="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/minus_ic" />
+
+                <TextView
+                    android:id="@+id/perfume1_count_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/second_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible">
+
+                <ImageButton
+                    android:id="@+id/perfume2_cart"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/parfume2" />
+
+                <TextView
+                    android:id="@+id/perfume2_name_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Dior"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume2_model_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="230dp"
+                    android:layout_marginTop="51dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Sauvage"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume2_type_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="81dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type: perfume"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume2__cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="111dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type of fragrance: "
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume2_type_fragrance_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="141dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Sweet"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume2_price_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="171dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Price: 100$"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume2_ml_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="50ml"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <ImageButton
+                    android:id="@+id/perfume2_plus_cart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="318dp"
+                    android:layout_marginTop="208dp"
+                    android:contentDescription="2"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/plus_ic" />
+
+                <ImageButton
+                    android:id="@+id/perfume2_minus_cart"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="268dp"
+                    android:layout_marginTop="211dp"
+                    android:contentDescription="2"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/minus_ic" />
+
+                <TextView
+                    android:id="@+id/perfume2_count_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/third_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible">
+
+                <ImageButton
+                    android:id="@+id/perfume3_cart"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/perfume3" />
+
+                <TextView
+                    android:id="@+id/perfume3_name_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Chanel"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume3_model_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="255dp"
+                    android:layout_marginTop="51dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Bleu"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume3_type_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="81dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type: perfume"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume3__cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="111dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type of fragrance: "
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume3_type_fragrance_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="141dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Floral"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume3_price_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="171dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Price: 150$"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume3_ml_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="120ml"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <ImageButton
+                    android:id="@+id/perfume3_plus_cart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="318dp"
+                    android:layout_marginTop="208dp"
+                    android:contentDescription="3"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/plus_ic" />
+
+                <ImageButton
+                    android:id="@+id/perfume3_minus_cart"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="268dp"
+                    android:layout_marginTop="211dp"
+                    android:contentDescription="3"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/minus_ic" />
+
+                <TextView
+                    android:id="@+id/perfume3_count_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/four_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible">
+
+                <ImageButton
+                    android:id="@+id/perfume4_cart"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/perfume4" />
+
+                <TextView
+                    android:id="@+id/perfume4_name_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Armani"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume4_model_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="260dp"
+                    android:layout_marginTop="51dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Stronger"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume4_type_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="81dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type: toilet water"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume4__cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="111dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type of fragrance: "
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume4_type_fragrance_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="141dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Bergamot"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume4_price_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="171dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Price: 100$"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume4_ml_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="50ml"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <ImageButton
+                    android:id="@+id/perfume4_plus_cart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="318dp"
+                    android:layout_marginTop="208dp"
+                    android:contentDescription="4"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/plus_ic" />
+
+                <ImageButton
+                    android:id="@+id/perfume4_minus_cart"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="268dp"
+                    android:layout_marginTop="211dp"
+                    android:contentDescription="4"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/minus_ic" />
+
+                <TextView
+                    android:id="@+id/perfume4_count_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/five_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible">
+
+                <ImageButton
+                    android:id="@+id/perfume5_cart"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/perfume5" />
+
+                <TextView
+                    android:id="@+id/perfume5_name_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Rabbane"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume5_model_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="51dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="1 million"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume5_type_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="81dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type: toilet water"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume5__cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="111dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type of fragrance: "
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume5_type_fragrance_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="141dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Grapefruit"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume5_price_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="171dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Price: 110$"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume5_ml_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="100ml"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <ImageButton
+                    android:id="@+id/perfume5_plus_cart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="318dp"
+                    android:layout_marginTop="208dp"
+                    android:contentDescription="5"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/plus_ic" />
+
+                <ImageButton
+                    android:id="@+id/perfume5_minus_cart"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="268dp"
+                    android:layout_marginTop="211dp"
+                    android:contentDescription="5"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/minus_ic" />
+
+                <TextView
+                    android:id="@+id/perfume5_count_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/six_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible">
+
+                <ImageButton
+                    android:id="@+id/perfume6_cart"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/perfume6" />
+
+                <TextView
+                    android:id="@+id/perfume6_name_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Hugo"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume6_model_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="235dp"
+                    android:layout_marginTop="51dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Boss"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume6_type_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="81dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type: toilet water"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume6__cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="111dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type of fragrance: "
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume6_type_fragrance_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="141dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Ginger"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume6_price_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="171dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Price: 90$"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume6_ml_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="50ml"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <ImageButton
+                    android:id="@+id/perfume6_plus_cart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="318dp"
+                    android:layout_marginTop="208dp"
+                    android:contentDescription="6"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/plus_ic" />
+
+                <ImageButton
+                    android:id="@+id/perfume6_minus_cart"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="268dp"
+                    android:layout_marginTop="211dp"
+                    android:contentDescription="6"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/minus_ic" />
+
+                <TextView
+                    android:id="@+id/perfume6_count_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/seven_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible">
+
+                <ImageButton
+                    android:id="@+id/perfume7_cart"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/perfume7" />
+
+                <TextView
+                    android:id="@+id/perfume7_name_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Prada"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume7_model_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="51dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Luna"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume7_type_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="81dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type: perfume"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume7__cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="111dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type of fragrance: "
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume7_type_fragrance_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="141dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Tonka beans"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume7_price_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="171dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Price: 50$"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume7_ml_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="50ml"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <ImageButton
+                    android:id="@+id/perfume7_plus_cart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="318dp"
+                    android:layout_marginTop="208dp"
+                    android:contentDescription="7"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/plus_ic" />
+
+                <ImageButton
+                    android:id="@+id/perfume7_minus_cart"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="268dp"
+                    android:layout_marginTop="211dp"
+                    android:contentDescription="7"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/minus_ic" />
+
+                <TextView
+                    android:id="@+id/perfume7_count_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/eight_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible">
+
+                <ImageButton
+                    android:id="@+id/perfume8_cart"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/perfume8" />
+
+                <TextView
+                    android:id="@+id/perfume8_name_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Armani"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume8_model_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="260dp"
+                    android:layout_marginTop="51dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Code"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume8_type_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="81dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type: perfume"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume8__cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="111dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type of fragrance: "
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume8_type_fragrance_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="141dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Bergamot"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume8_price_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="171dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Price: 50$"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume8_ml_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="50ml"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <ImageButton
+                    android:id="@+id/perfume8_plus_cart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="318dp"
+                    android:layout_marginTop="208dp"
+                    android:contentDescription="8"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/plus_ic" />
+
+                <ImageButton
+                    android:id="@+id/perfume8_minus_cart"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="268dp"
+                    android:layout_marginTop="211dp"
+                    android:contentDescription="8"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/minus_ic" />
+
+                <TextView
+                    android:id="@+id/perfume8_count_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/nine_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible">
+
+                <ImageButton
+                    android:id="@+id/perfume9_cart"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/perfume9" />
+
+                <TextView
+                    android:id="@+id/perfume9_name_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Huggo"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume9_model_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="51dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Jeans"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume9_type_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="81dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type: toilet water"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume9__cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="111dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type of fragrance: "
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume9_type_fragrance_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="141dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Vetiver"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume9_price_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="171dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Price: 60$"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume9_ml_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="100ml"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <ImageButton
+                    android:id="@+id/perfume9_plus_cart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="318dp"
+                    android:layout_marginTop="208dp"
+                    android:contentDescription="9"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/plus_ic" />
+
+                <ImageButton
+                    android:id="@+id/perfume9_minus_cart"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="268dp"
+                    android:layout_marginTop="211dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/minus_ic" />
+
+                <TextView
+                    android:id="@+id/perfume9_count_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="201dp"
+                    android:contentDescription="9"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/ten_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible">
+
+                <ImageButton
+                    android:id="@+id/perfume10_cart"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/perfume10" />
+
+                <TextView
+                    android:id="@+id/perfume10_name_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Lacoste"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume10_model_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="265dp"
+                    android:layout_marginTop="51dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="L’Homme"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume10_type_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="81dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type: toilet water"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume10__cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="111dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Type of fragrance: "
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume10_type_fragrance_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="141dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Vetiver"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume10_price_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="171dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Price: 40$"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/perfume10_ml_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="50ml"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <ImageButton
+                    android:id="@+id/perfume10_plus_cart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="318dp"
+                    android:layout_marginTop="208dp"
+                    android:contentDescription="10"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/plus_ic" />
+
+                <ImageButton
+                    android:id="@+id/perfume10_minus_cart"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="268dp"
+                    android:layout_marginTop="211dp"
+                    android:contentDescription="10"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/minus_ic" />
+
+                <TextView
+                    android:id="@+id/perfume10_count_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="201dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
